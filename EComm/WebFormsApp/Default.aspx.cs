@@ -14,12 +14,18 @@ namespace WebFormsApp
             if (!IsPostBack) {
                 NameTextBox.Text = string.Empty;
                 GreetingLabel.Text = string.Empty;
+                AddressPanel.Visible= false;
             }
         }
 
         protected void ShowGreetingButton_Click(object sender, EventArgs e)
         {
             GreetingLabel.Text = $"Hello, {NameTextBox.Text}";
+        }
+
+        protected void ShowAddressCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            AddressPanel.Visible = ShowAddressCheckBox.Checked;
         }
     }
 }

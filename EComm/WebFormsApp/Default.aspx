@@ -14,6 +14,20 @@
             <br /><br />
             <asp:Label ID="GreetingLabel" runat="server" Text="Label"></asp:Label>    
         </div>
+        <div>
+            <asp:CheckBox ID="ShowAddressCheckBox" runat="server" AutoPostBack="true" OnCheckedChanged="ShowAddressCheckBox_CheckedChanged" />
+            <asp:Panel ID="AddressPanel" runat="server">
+                <asp:TextBox ID="StreetTextBox" runat="server"></asp:TextBox>
+                <br /><br />
+                <asp:TextBox ID="CityTextBox" runat="server"></asp:TextBox>
+                <br /><br />
+                <asp:DropDownList ID="StateDropDownList" runat="server">
+                    <asp:ListItem Text="Alabama" Value="AL"></asp:ListItem>
+                    <asp:ListItem Text="Oregon" Value="OR"></asp:ListItem>
+                    <asp:ListItem Text="Iowa" Value="IA"></asp:ListItem>
+                </asp:DropDownList>
+            </asp:Panel>
+        </div>
     </form>
 </body>
 </html>

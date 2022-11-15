@@ -27,5 +27,10 @@ namespace WebFormsApp
         {
             EmployeePanel.Visible = ShowAddressCheckBox.Checked;
         }
+
+        protected void SaveButton_Click(object sender, EventArgs e)
+        {
+            // Save the employee
+        }
     }
 }

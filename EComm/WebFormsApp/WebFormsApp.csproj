@@ -74,6 +74,7 @@
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
     <Content Include="ProductList.aspx" />
+    <Content Include="ProductsBySupplier.aspx" />
     <Content Include="Scripts\jquery-3.6.0.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />
     <Content Include="Scripts\jquery-3.6.0.slim.js" />
@@ -97,6 +98,13 @@
     </Compile>
     <Compile Include="ProductList.aspx.designer.cs">
       <DependentUpon>ProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsBySupplier.aspx.cs">
+      <DependentUpon>ProductsBySupplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductsBySupplier.aspx.designer.cs">
+      <DependentUpon>ProductsBySupplier.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -16,16 +16,33 @@
         </div>
         <div>
             <asp:CheckBox ID="ShowAddressCheckBox" runat="server" AutoPostBack="true" OnCheckedChanged="ShowAddressCheckBox_CheckedChanged" />
-            <asp:Panel ID="AddressPanel" runat="server">
-                <asp:TextBox ID="StreetTextBox" runat="server"></asp:TextBox>
-                <br /><br />
-                <asp:TextBox ID="CityTextBox" runat="server"></asp:TextBox>
-                <br /><br />
-                <asp:DropDownList ID="StateDropDownList" runat="server">
-                    <asp:ListItem Text="Alabama" Value="AL"></asp:ListItem>
-                    <asp:ListItem Text="Oregon" Value="OR"></asp:ListItem>
-                    <asp:ListItem Text="Iowa" Value="IA"></asp:ListItem>
-                </asp:DropDownList>
+            <asp:Panel ID="EmployeePanel" runat="server">
+                <asp:Table runat="server">
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Label runat="server" Text="First Name"></asp:Label>
+                        </asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox ID="FirstNameTextBox" runat="server"></asp:TextBox>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Label runat="server" Text="Last Name"></asp:Label>
+                        </asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox ID="LastNameTextBox" runat="server"></asp:TextBox>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Label runat="server" Text="Postal Code"></asp:Label>
+                        </asp:TableCell>
+                        <asp:TableCell>
+                            <asp:TextBox ID="PostalCode" Width="60" MaxLength="5" runat="server"></asp:TextBox>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
             </asp:Panel>
         </div>
     </form>

@@ -60,39 +60,39 @@ namespace WebFormsApp
         protected global::System.Web.UI.WebControls.CheckBox ShowAddressCheckBox;
 
         /// <summary>
-        /// AddressPanel control.
+        /// EmployeePanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel AddressPanel;
+        protected global::System.Web.UI.WebControls.Panel EmployeePanel;
 
         /// <summary>
-        /// StreetTextBox control.
+        /// FirstNameTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox StreetTextBox;
+        protected global::System.Web.UI.WebControls.TextBox FirstNameTextBox;
 
         /// <summary>
-        /// CityTextBox control.
+        /// LastNameTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CityTextBox;
+        protected global::System.Web.UI.WebControls.TextBox LastNameTextBox;
 
         /// <summary>
-        /// StateDropDownList control.
+        /// PostalCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList StateDropDownList;
+        protected global::System.Web.UI.WebControls.TextBox PostalCode;
     }
 }

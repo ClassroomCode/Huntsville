@@ -14,7 +14,7 @@ namespace WebFormsApp
             if (!IsPostBack) {
                 NameTextBox.Text = string.Empty;
                 GreetingLabel.Text = string.Empty;
-                AddressPanel.Visible= false;
+                EmployeePanel.Visible= false;
             }
         }
 
@@ -25,7 +25,7 @@ namespace WebFormsApp
 
         protected void ShowAddressCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            AddressPanel.Visible = ShowAddressCheckBox.Checked;
+            EmployeePanel.Visible = ShowAddressCheckBox.Checked;
         }
     }
 }

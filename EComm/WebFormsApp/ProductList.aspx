@@ -9,6 +9,17 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:SqlDataSource 
+                ID="ProductsSqlDataSource" 
+                runat="server" 
+                ConnectionString="<%$ConnectionStrings:ConnStr%>"
+                SelectCommand="SELECT Id, ProductName, UnitPrice FROM Products;">
+            </asp:SqlDataSource>
+            <asp:ListBox ID="ProductListBox" 
+                runat="server"
+                DataSourceID="ProductsSqlDataSource"
+                DataTextField="ProductName" 
+                DataValueField="ProductName"></asp:ListBox>
         </div>
     </form>
 </body>

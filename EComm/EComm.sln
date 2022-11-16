@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsApp", "WebFormsApp\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommLib", "ECommLib\ECommLib.csproj", "{459C76A4-A982-4649-B979-BDC4F193F70E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsApp2", "WebFormsApp2\WebFormsApp2.csproj", "{5A87527A-4745-4E11-AE3C-08641E85879E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{459C76A4-A982-4649-B979-BDC4F193F70E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{459C76A4-A982-4649-B979-BDC4F193F70E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{459C76A4-A982-4649-B979-BDC4F193F70E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A87527A-4745-4E11-AE3C-08641E85879E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A87527A-4745-4E11-AE3C-08641E85879E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A87527A-4745-4E11-AE3C-08641E85879E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A87527A-4745-4E11-AE3C-08641E85879E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

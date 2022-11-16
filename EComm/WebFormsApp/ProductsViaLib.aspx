@@ -8,8 +8,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <asp:Panel ID="DataPanel" runat="server">
         <div>
-            <asp:ObjectDataSource ID="SupplierObjectDataSource" runat="server" SelectMethod="GetSuppliers" TypeName="ECommLib.Repository"></asp:ObjectDataSource>
+            <asp:ObjectDataSource ID="SupplierObjectDataSource" runat="server" SelectMethod="GetSuppliers" TypeName="ECommLib.Repository" OnSelected="SupplierObjectDataSource_Selected"></asp:ObjectDataSource>
             <asp:DropDownList ID="SupplierDropDownList" runat="server" DataTextField="CompanyName" DataValueField="Id" DataSourceID="SupplierObjectDataSource" AutoPostBack="True"></asp:DropDownList>
         </div>
         <div>
@@ -105,6 +106,10 @@
                 </SelectedItemTemplate>
             </asp:ListView>
         </div>
+        </asp:Panel>
+        <asp:Panel ID="ErrorPanel" runat="server">
+            <h1>No Data</h1>
+        </asp:Panel>
     </form>
 </body>
 </html>

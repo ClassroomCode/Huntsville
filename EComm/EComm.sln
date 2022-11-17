@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsApp2", "WebFormsApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApp", "MvcApp\MvcApp.csproj", "{36093090-102F-49C5-93BB-159767F8D172}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommCore", "ECommCore\ECommCore.csproj", "{80E49DCC-EF64-4507-B1A7-E09E3F0C4113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommCoreMVC", "ECommCoreMVC\ECommCoreMVC.csproj", "{07ABA116-F3B5-4582-BE77-49D02480EC64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{36093090-102F-49C5-93BB-159767F8D172}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36093090-102F-49C5-93BB-159767F8D172}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36093090-102F-49C5-93BB-159767F8D172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80E49DCC-EF64-4507-B1A7-E09E3F0C4113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80E49DCC-EF64-4507-B1A7-E09E3F0C4113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80E49DCC-EF64-4507-B1A7-E09E3F0C4113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80E49DCC-EF64-4507-B1A7-E09E3F0C4113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07ABA116-F3B5-4582-BE77-49D02480EC64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07ABA116-F3B5-4582-BE77-49D02480EC64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07ABA116-F3B5-4582-BE77-49D02480EC64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07ABA116-F3B5-4582-BE77-49D02480EC64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

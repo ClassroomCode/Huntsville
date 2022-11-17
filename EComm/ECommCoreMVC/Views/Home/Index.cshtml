@@ -1,0 +1,12 @@
+﻿@model IEnumerable<ECommLib.Supplier>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <ul>
+        @foreach (var s in Model) {
+            <li>@s.CompanyName</li>
+        }
+    </ul>
+</div>

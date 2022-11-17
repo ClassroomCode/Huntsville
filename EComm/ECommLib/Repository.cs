@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace ECommLib
 {
-    public class Repository
+    public class Repository : IRepository
     {
         public List<Supplier> GetSuppliers()
         {

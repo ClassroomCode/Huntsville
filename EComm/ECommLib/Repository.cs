@@ -11,7 +11,7 @@ namespace ECommLib
         {
             var retVal = new List<Supplier>();
 
-            var conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=EComm2;Integrated Security=True;");
+            var conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=EComm;Integrated Security=True;");
             var cmd = new SqlCommand("SELECT Id, CompanyName FROM Suppliers", conn);
             try {
                 conn.Open();

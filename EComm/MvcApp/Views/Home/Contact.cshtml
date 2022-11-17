@@ -15,3 +15,11 @@
     <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
     <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
 </address>
+
+@Ajax.ActionLink("Get Time", "GetServerTime", new AjaxOptions {
+    UpdateTargetId = "TheTime",
+    InsertionMode = InsertionMode.ReplaceWith,
+    HttpMethod = "GET"
+})
+
+<p id="TheTime"></p>

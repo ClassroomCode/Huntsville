@@ -22,10 +22,19 @@ namespace MvcApp.Controllers
             }
             */
 
-            var items = from s in suppliers select
-                        new SelectListItem { Text = s.CompanyName, Value = s.Id.ToString() };
+            //var items = from s in suppliers select
+            //            new SelectListItem { Text = s.CompanyName, Value = s.Id.ToString() };
 
-            return View(items);
+
+            return View(suppliers);
+        }
+
+        public ActionResult ProductList(int supplierId)
+        {
+            var db = new Repository();
+            var products = db.GetProducts(supplierId);
+
+            return View("_ProductList", products);
         }
     }
 }

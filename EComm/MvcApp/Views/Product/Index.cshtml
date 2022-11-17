@@ -1,18 +1,23 @@
-﻿@model IEnumerable<SelectListItem>
+﻿@model IEnumerable<ECommLib.Supplier>
 @{
     ViewBag.Title = "Products By Supplier";
 }
 
 <h2>Products By Supplier</h2>
 
-@Html.DropDownList("Suppliers", Model)
+@* @Html.DropDownList("Suppliers", Model) *@
 
+@using (Ajax.BeginForm("ProductList", "Product", new AjaxOptions {
+    UpdateTargetId = "ProductList",
+    InsertionMode = InsertionMode.Replace,
+    HttpMethod = "GET"
+})) {
 
-@*
-<select name="SupplierDropDownList">
+<select name="SupplierId">
     @foreach (var supplier in Model) {
         <option value="@supplier.Id">@supplier.CompanyName</option>
     }
 </select>
-*@
+} @* </form> *@
+<div id="ProductList"></div>
 

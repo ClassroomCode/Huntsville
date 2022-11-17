@@ -13,12 +13,13 @@
     HttpMethod = "GET"
 })) {
 
-<select name="SupplierId">
-    @foreach (var supplier in Model) {
-        <option value="@supplier.Id">@supplier.CompanyName</option>
-    }
-</select>
-<input type="submit" value="Submit" />
+    <select name="SupplierId" onchange="$(this.form).submit()">
+        @foreach (var supplier in Model) {
+            <option value="@supplier.Id">@supplier.CompanyName</option>
+        }
+    </select>
 } @* </form> *@
 <div id="ProductList"></div>
+
+
 

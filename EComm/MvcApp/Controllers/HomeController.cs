@@ -13,10 +13,12 @@ namespace MvcApp.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult About(string name = "")
         {
-            ViewBag.Message = "Your application description page.";
-
+            ViewBag.Name = name;
+            if (!string.IsNullOrWhiteSpace(name)) {
+                ViewBag.Greeting = $"Hello, {name}";
+            }
             return View();
         }
 

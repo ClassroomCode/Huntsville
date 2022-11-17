@@ -14,7 +14,18 @@ namespace MvcApp.Controllers
             var db = new Repository();
             var suppliers = db.GetSuppliers();
 
-            return View(suppliers);
+            /*
+            var items = new List<SelectListItem>();
+            foreach (var s in suppliers) {
+                var item = new SelectListItem { Text = s.CompanyName, Value = s.Id.ToString() };
+                items.Add(item);
+            }
+            */
+
+            var items = from s in suppliers select
+                        new SelectListItem { Text = s.CompanyName, Value = s.Id.ToString() };
+
+            return View(items);
         }
     }
 }

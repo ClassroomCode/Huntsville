@@ -15,6 +15,8 @@ namespace MvcApp.Controllers
 
         public ActionResult About(string name = "")
         {
+            name = "<h1>Bill</h1>";
+
             ViewBag.Name = name;
             if (!string.IsNullOrWhiteSpace(name)) {
                 ViewBag.Greeting = $"Hello, {name}";
@@ -27,6 +29,11 @@ namespace MvcApp.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public string GetServerTime()
+        {
+            return $"<p>{DateTime.Now.ToLongTimeString()}</p>";
         }
     }
 }

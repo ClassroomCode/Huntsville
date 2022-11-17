@@ -9,6 +9,6 @@
         <input name="name" type="text" value="@ViewBag.Name" />
         <input type="submit" value="Button" />
         <br /><br />
-        <span>@ViewBag.Greeting</span>
+        <span>@Html.Raw(ViewBag.Greeting)</span>
     </form>
 </div>
